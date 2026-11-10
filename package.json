@@ -1,0 +1,12 @@
+{
+  "name": "done",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A board-game turn tracker: everyone taps when their turn is over, and when the table is done, every phone chimes.",
+  "scripts": {
+    "test": "node --test",
+    "serve": "python3 -m http.server 8942",
+    "icons": "python3 scripts/make-icons.py"
+  }
+}
