@@ -118,7 +118,10 @@ function friendlyError(err) {
   if (/push-not-configured/.test(message)) {
     return 'Notifications aren’t set up for this app yet.';
   }
-  if (/anonymous/i.test(message)) {
+  if (
+    err?.code === 'anonymous_provider_disabled' ||
+    /anonymous sign-?ins?.*(disabled|not enabled|not allowed|turned off)/i.test(message)
+  ) {
     return 'Anonymous sign-in is switched off in Supabase. Turn it on under Authentication → Sign In / Providers.';
   }
   if (/No room with that code/i.test(message)) {

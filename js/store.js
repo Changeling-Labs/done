@@ -28,7 +28,7 @@ export async function ensureSession() {
   const { data } = await sb.auth.getSession();
   if (data?.session) return data.session;
 
-  const { data: created, error } = await sb.signInAnonymously();
+  const { data: created, error } = await sb.auth.signInAnonymously();
   if (error) throw error;
   if (!created?.session) throw new Error('Anonymous sign-in returned no session');
   return created.session;

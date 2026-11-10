@@ -3,7 +3,7 @@
 // Two jobs: keep the shell available on bad table wifi, and receive the Web
 // Push that says everyone has taken their turn.
 
-const CACHE = 'done-v1';
+const CACHE = 'done-v2';
 const ASSETS = [
   './',
   './index.html',

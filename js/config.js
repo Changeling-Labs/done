@@ -22,4 +22,4 @@ export const EDGE_FUNCTION = 'notify-round';
 // Shown quietly in the UI and in the Help sheet. Keep it in step with
 // package.json (test/version.test.js enforces it) and bump the service-worker
 // CACHE in sw.js on every release.
-export const APP_VERSION = '0.1.0';
+export const APP_VERSION = '0.1.1';

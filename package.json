@@ -1,6 +1,6 @@
 {
   "name": "done",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "A board-game turn tracker: everyone taps when their turn is over, and when the table is done, every phone chimes.",

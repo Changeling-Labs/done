@@ -11,13 +11,14 @@ Open it at the table. Every player taps **I’m done** when their turn is over. 
 - **Web Push fallback.** The last player’s app notifies everyone else’s phones, even if the app is closed.
 - **Installable PWA.** Cache-first shell, light and dark, WCAG AA.
 
-Status: **v0.1.0** — built, unit-tested, browser-verified. Live at
-https://changelinglabs.com/done/ (GitHub Pages from `main`).
+Status: **v0.1.1** — built, unit-tested, and verified end-to-end against the
+live backend. Live at https://changelinglabs.com/done/ (GitHub Pages from `main`).
 
-> **Backend:** the frontend ships now, but the Supabase objects must be created
-> once in the dashboard. See [`supabase/README.md`](supabase/README.md) for the
-> two remaining steps (run `schema.sql`, deploy `notify-round`). The chime works
-> without them; the server-backed room does not.
+The Supabase schema is applied and `notify-round` is deployed. A two-session
+test on 2026-11-09 created a room, joined from a second anonymous session,
+propagated the player over Realtime, completed round 1 from both phones, and
+confirmed the push function responds (no subscriptions in the test, so `sent: 0`).
+Setup details for rebuilding from scratch: [`supabase/README.md`](supabase/README.md).
 
 ---
 
