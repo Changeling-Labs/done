@@ -12,7 +12,8 @@ Open it at the table. Every player taps **I’m done** when their turn is over. 
 - **Installable PWA.** Cache-first shell, light and dark, WCAG AA.
 
 Status: **v0.1.1** — built, unit-tested, and verified end-to-end against the
-live backend. Live at https://changelinglabs.com/done/ (GitHub Pages from `main`).
+live backend. Live at https://changelinglabs.com/done/ (GitHub Pages from `main`)
+and listed on the [Changeling Labs hub](https://changelinglabs.com/) as an Active app.
 
 The Supabase schema is applied and `notify-round` is deployed. A two-session
 test on 2026-11-09 created a room, joined from a second anonymous session,
